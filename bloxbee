@@ -1,0 +1,243 @@
+BloxBee, [09.08.2024 22:37]
+<!DOCTYPE html> 
+<html lang="uk"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>BloxBee Boost</title> 
+    <style> 
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background: #181818; 
+            margin: 0; 
+            padding: 0; 
+            color: #eee; 
+            line-height: 1.6; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        } 
+        header { 
+            background: #282828; 
+            color: #fff; 
+            padding: 30px 0; 
+            text-align: center; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+            border-bottom: 1px solid #444; 
+            position: relative; 
+            z-index: 10; 
+        } 
+        header h1 { 
+            margin: 0; 
+            font-size: 3.5rem; 
+            letter-spacing: 3px; 
+            animation: fadeInDown 1s ease-out; 
+        } 
+        @keyframes fadeInDown { 
+            from { 
+                opacity: 0; 
+                transform: translateY(-20px); 
+            } 
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            } 
+        } 
+        .container { 
+            max-width: 1000px; 
+            margin: auto; 
+            padding: 40px 20px; 
+            background: #202020; 
+            border-radius: 30px; 
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); 
+            animation: fadeInUp 1s ease-out; 
+            position: relative; 
+            z-index: 5; 
+        } 
+        @keyframes fadeInUp { 
+            from { 
+                opacity: 0; 
+                transform: translateY(20px); 
+            } 
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            } 
+        } 
+        img { 
+            display: block; 
+            margin: 20px auto; 
+            max-width: 80%; 
+            height: auto; 
+            border-radius: 20px; 
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        } 
+        img:hover { 
+            transform: scale(1.1); 
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6); 
+        } 
+        p { 
+            font-size: 1.4rem; 
+            margin: 20px 0; 
+            text-align: center; 
+        } 
+        a { 
+            color: #00c6ff; 
+            text-decoration: none; 
+            font-weight: bold; 
+            position: relative; 
+            transition: color 0.3s ease; 
+        } 
+        a:hover { 
+            color: #007BFF; 
+        } 
+        a::after { 
+            content: ''; 
+            position: absolute; 
+            left: 50%; 
+            bottom: -5px; 
+            width: 0; 
+            height: 2px; 
+            background: #00c6ff; 
+            transition: width 0.3s ease, left 0.3s ease; 
+        } 
+        a:hover::after { 
+            width: 100%; 
+            left: 0; 
+        } 
+        h3 { 
+            color: #00c6ff; 
+            margin-bottom: 30px; 
+            font-size: 2.5rem; 
+            position: relative; 
+            text-align: center; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            animation: fadeInUp 1s ease-out; 
+        } 
+        h3::after { 
+            content: ''; 
+            display: block; 
+            width: 100px; 
+            height: 4px; 
+            background-color: #00c6ff; 
+            margin: 10px auto; 
+            border-radius: 2px; 
+            box-shadow: 0 5px 15px rgba(0, 198, 255, 0.5); 
+        } 
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 1.1rem; 
+            background: #282828; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); 
+            animation: fadeInUp 1s ease-out; 
+        } 
+        th, td { 
+            padding: 20px; 
+            text-align: center; 
+            color:
+
+BloxBee, [09.08.2024 22:37]
+#fff; 
+            border-bottom: 1px solid #444; } 
+        th { 
+            background: linear-gradient(135deg, #007BFF, #00c6ff); 
+            color: white; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.4); 
+        } 
+        tr { 
+            transition: background-color 0.3s ease; 
+        } 
+        tr:hover { 
+            background-color: #333; 
+        } 
+        .footer { 
+            background: #282828; 
+            color: #fff; 
+            text-align: center; 
+            padding: 20px 0; 
+            margin-top: auto; 
+            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5); 
+            border-top: 1px solid #444; 
+            position: relative; 
+            z-index: 10; 
+        } 
+        .footer p { 
+            margin: 0; 
+            font-size: 1.2rem; 
+        } 
+    </style> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+</head> 
+<body> 
+ 
+    <header> 
+        <h1>BloxBee Boost</h1> 
+    </header> 
+ 
+    <div class="container"> 
+        <img src="Знімок екрана 2024-08-08 180911.png" alt="BloxBee Logo"> 
+ 
+        <p>Це сайт, де ви можете купити повний буст акаунта або окремі частини того, що ви хочете.</p> 
+ 
+        <p><a href="https://t.me/BloxBeeShop">Наш Telegram для покупки фруктів</a></p> 
+        <p><a href="https://t.me/BloxBee">А також Telegram для покупки і замовлень на цьому сайті</a></p> 
+ 
+        <h3>Раси</h3> 
+        <table> 
+            <tr> 
+                <th>Раси</th> 
+                <th>Ціна (грн/рб)</th> 
+                <th>Час на роботу</th> 
+            </tr> 
+            <tr> 
+                <td>Кіборг</td> 
+                <td>30/45</td> 
+                <td>1 день</td> 
+            </tr> 
+            <tr> 
+                <td>Гуль</td> 
+                <td>15/20</td> 
+                <td>12 годин</td> 
+            </tr> 
+        </table> 
+ 
+        <h3>Прокачка лвл</h3> 
+        <table> 
+            <tr> 
+                <th>Лвл</th> 
+                <th>Ціна (грн/рб)</th> 
+                <th>Час на роботу</th> 
+            </tr> 
+            <tr> 
+                <td>700+</td> 
+                <td>50/75</td> 
+                <td>12 годин</td> 
+            </tr> 
+            <tr> 
+                <td>1500+</td> 
+                <td>70/100</td> 
+                <td>12 годин</td> 
+            </tr> 
+            <tr> 
+                <td>2550</td> 
+                <td>120/170</td> 
+                <td>16 годин</td> 
+            </tr> 
+        </table> 
+    </div> 
+ 
+    <footer class="footer"> 
+        <p>&copy; 2024 BloxBee Boost. All Rights Reserved.</p> 
+    </footer> 
+ 
+</body> 
+</html>
